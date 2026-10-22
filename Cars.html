@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ar" xml:lang="ar" dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>السيارات - الطريق لتأجير السيارات</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="wrap">
+            <div class="brand">الطريق <span>لتأجير السيارات</span></div>
+            <ul id="nav">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+                <li><a href="Cars.html" class="active">السيارات</a></li>
+                <li><a href="#" id="exit-link" class="exit">خروج</a></li>
+                <li><a href="Cars.html" class="cta">احجز الآن</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-banner">
+        <div class="wrap">
+            <h1>السيارات المتاحة</h1>
+            <p>اختر سيارة أو أكثر ثم اضغط "متابعة" لتقديم طلب الحجز</p>
+        </div>
+    </div>
+
+    <div class="wrap section">
+        <div class="card-box">
+            <p>اضغط على مربع "إظهار التفاصيل" لعرض معلومات السيارة، واختر سيارة أو أكثر ثم اضغط "متابعة". الأسعار يومية بالليرة السورية الجديدة.</p>
+            <div class="table-wrap">
+                <table id="cars-table">
+                    <tr>
+                        <th>الرمز</th>
+                        <th>الصورة</th>
+                        <th>الموديل</th>
+                        <th>سنة الصنع</th>
+                        <th>السعر اليومي</th>
+                        <th>إظهار التفاصيل</th>
+                        <th>اختيار</th>
+                    </tr>
+                    <tr>
+                        <td class="c-code">CR-001</td>
+                        <td><img src="images/car1.jpg" alt="McLaren Artura" /></td>
+                        <td class="c-model">McLaren Artura</td>
+                        <td>2023</td>
+                        <td><span class="c-price">78000</span> ل.س</td>
+                        <td><input type="checkbox" class="chk-details" id="show-CR-001" value="CR-001" title="إظهار تفاصيل McLaren Artura" /></td>
+                        <td><input type="checkbox" class="chk-select" id="select-CR-001" name="selected" value="CR-001" title="اختيار McLaren Artura" /></td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div class="details-panel">
+                                <div class="detail-item"><span class="detail-label">نوع الوقود</span><span class="detail-value">بنزين هجين</span></div>
+                                <div class="detail-item"><span class="detail-label">ناقل الحركة</span><span class="detail-value">أوتوماتيك</span></div>
+                                <div class="detail-item"><span class="detail-label">عدد المقاعد</span><span class="detail-value">2</span></div>
+                                <div class="detail-item"><span class="detail-label">عداد الكيلومترات</span><span class="detail-value">4500 كم</span></div>
+                                <div class="detail-item"><span class="detail-label">اللون</span><span class="detail-value">أزرق</span></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="c-code">CR-002</td>
+                        <td><img src="images/car2.jpg" alt="Lincoln Continental" /></td>
+                        <td class="c-model">Lincoln Continental</td>
+                        <td>2022</td>
+                        <td><span class="c-price">12000</span> ل.س</td>
+                        <td><input type="checkbox" class="chk-details" id="show-CR-002" value="CR-002" title="إظهار تفاصيل Lincoln Continental" /></td>
+                        <td><input type="checkbox" class="chk-select" id="select-CR-002" name="selected" value="CR-002" title="اختيار Lincoln Continental" /></td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div class="details-panel">
+                                <div class="detail-item"><span class="detail-label">نوع الوقود</span><span class="detail-value">بنزين</span></div>
+                                <div class="detail-item"><span class="detail-label">ناقل الحركة</span><span class="detail-value">أوتوماتيك</span></div>
+                                <div class="detail-item"><span class="detail-label">عدد المقاعد</span><span class="detail-value">5</span></div>
+                                <div class="detail-item"><span class="detail-label">عداد الكيلومترات</span><span class="detail-value">22000 كم</span></div>
+                                <div class="detail-item"><span class="detail-label">اللون</span><span class="detail-value">أبيض</span></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="c-code">CR-003</td>
+                        <td><img src="images/car3.jpg" alt="Dodge Charger" /></td>
+                        <td class="c-model">Dodge Charger</td>
+                        <td>2021</td>
+                        <td><span class="c-price">14500</span> ل.س</td>
+                        <td><input type="checkbox" class="chk-details" id="show-CR-003" value="CR-003" title="إظهار تفاصيل Dodge Charger" /></td>
+                        <td><input type="checkbox" class="chk-select" id="select-CR-003" name="selected" value="CR-003" title="اختيار Dodge Charger" /></td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div class="details-panel">
+                                <div class="detail-item"><span class="detail-label">نوع الوقود</span><span class="detail-value">بنزين</span></div>
+                                <div class="detail-item"><span class="detail-label">ناقل الحركة</span><span class="detail-value">أوتوماتيك</span></div>
+                                <div class="detail-item"><span class="detail-label">عدد المقاعد</span><span class="detail-value">5</span></div>
+                                <div class="detail-item"><span class="detail-label">عداد الكيلومترات</span><span class="detail-value">38000 كم</span></div>
+                                <div class="detail-item"><span class="detail-label">اللون</span><span class="detail-value">أصفر</span></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="c-code">CR-004</td>
+                        <td><img src="images/car4.jpg" alt="Chevrolet Camaro" /></td>
+                        <td class="c-model">Chevrolet Camaro</td>
+                        <td>2022</td>
+                        <td><span class="c-price">13000</span> ل.س</td>
+                        <td><input type="checkbox" class="chk-details" id="show-CR-004" value="CR-004" title="إظهار تفاصيل Chevrolet Camaro" /></td>
+                        <td><input type="checkbox" class="chk-select" id="select-CR-004" name="selected" value="CR-004" title="اختيار Chevrolet Camaro" /></td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div class="details-panel">
+                                <div class="detail-item"><span class="detail-label">نوع الوقود</span><span class="detail-value">بنزين</span></div>
+                                <div class="detail-item"><span class="detail-label">ناقل الحركة</span><span class="detail-value">أوتوماتيك</span></div>
+                                <div class="detail-item"><span class="detail-label">عدد المقاعد</span><span class="detail-value">4</span></div>
+                                <div class="detail-item"><span class="detail-label">عداد الكيلومترات</span><span class="detail-value">27000 كم</span></div>
+                                <div class="detail-item"><span class="detail-label">اللون</span><span class="detail-value">أبيض</span></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="c-code">CR-005</td>
+                        <td><img src="images/car5.jpg" alt="McLaren Elva" /></td>
+                        <td class="c-model">McLaren Elva</td>
+                        <td>2023</td>
+                        <td><span class="c-price">130000</span> ل.س</td>
+                        <td><input type="checkbox" class="chk-details" id="show-CR-005" value="CR-005" title="إظهار تفاصيل McLaren Elva" /></td>
+                        <td><input type="checkbox" class="chk-select" id="select-CR-005" name="selected" value="CR-005" title="اختيار McLaren Elva" /></td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div class="details-panel">
+                                <div class="detail-item"><span class="detail-label">نوع الوقود</span><span class="detail-value">بنزين</span></div>
+                                <div class="detail-item"><span class="detail-label">ناقل الحركة</span><span class="detail-value">أوتوماتيك</span></div>
+                                <div class="detail-item"><span class="detail-label">عدد المقاعد</span><span class="detail-value">2</span></div>
+                                <div class="detail-item"><span class="detail-label">عداد الكيلومترات</span><span class="detail-value">1800 كم</span></div>
+                                <div class="detail-item"><span class="detail-label">اللون</span><span class="detail-value">أزرق</span></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="c-code">CR-006</td>
+                        <td><img src="images/car6.jpg" alt="Mercedes G-Class" /></td>
+                        <td class="c-model">Mercedes G-Class</td>
+                        <td>2024</td>
+                        <td><span class="c-price">32500</span> ل.س</td>
+                        <td><input type="checkbox" class="chk-details" id="show-CR-006" value="CR-006" title="إظهار تفاصيل Mercedes G-Class" /></td>
+                        <td><input type="checkbox" class="chk-select" id="select-CR-006" name="selected" value="CR-006" title="اختيار Mercedes G-Class" /></td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div class="details-panel">
+                                <div class="detail-item"><span class="detail-label">نوع الوقود</span><span class="detail-value">كهربائي</span></div>
+                                <div class="detail-item"><span class="detail-label">ناقل الحركة</span><span class="detail-value">أوتوماتيك</span></div>
+                                <div class="detail-item"><span class="detail-label">عدد المقاعد</span><span class="detail-value">5</span></div>
+                                <div class="detail-item"><span class="detail-label">عداد الكيلومترات</span><span class="detail-value">6000 كم</span></div>
+                                <div class="detail-item"><span class="detail-label">اللون</span><span class="detail-value">أزرق</span></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="c-code">CR-007</td>
+                        <td><img src="images/car7.jpg" alt="BMW X5" /></td>
+                        <td class="c-model">BMW X5</td>
+                        <td>2022</td>
+                        <td><span class="c-price">17000</span> ل.س</td>
+                        <td><input type="checkbox" class="chk-details" id="show-CR-007" value="CR-007" title="إظهار تفاصيل BMW X5" /></td>
+                        <td><input type="checkbox" class="chk-select" id="select-CR-007" name="selected" value="CR-007" title="اختيار BMW X5" /></td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div class="details-panel">
+                                <div class="detail-item"><span class="detail-label">نوع الوقود</span><span class="detail-value">ديزل</span></div>
+                                <div class="detail-item"><span class="detail-label">ناقل الحركة</span><span class="detail-value">أوتوماتيك</span></div>
+                                <div class="detail-item"><span class="detail-label">عدد المقاعد</span><span class="detail-value">5</span></div>
+                                <div class="detail-item"><span class="detail-label">عداد الكيلومترات</span><span class="detail-value">31000 كم</span></div>
+                                <div class="detail-item"><span class="detail-label">اللون</span><span class="detail-value">أبيض</span></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="btn-row">
+                <button type="button" id="btn-continue">متابعة</button>
+            </div>
+            <p id="select-msg" class="msg-warning"></p>
+        </div>
+
+        <div id="booking-section" class="card-box">
+            <form id="booking-form" action="#" method="post">
+                <fieldset>
+                    <legend>نموذج طلب الحجز</legend>
+
+                    <div>
+                        <strong>السيارات المختارة:</strong>
+                        <ul id="selected-list"></ul>
+                    </div>
+
+                    <div class="field">
+                        <label for="fullname">الاسم الكامل</label>
+                        <input type="text" id="fullname" name="fullname" />
+                        <span class="hint">أحرف عربية فقط</span>
+                        <span class="error" id="err-fullname"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="nationalid">الرقم الوطني <span class="required">*</span></label>
+                        <input type="text" id="nationalid" name="nationalid" maxlength="11" />
+                        <span class="hint">11 رقماً، أول رقمين من 01 إلى 14</span>
+                        <span class="error" id="err-nationalid"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="startdate">تاريخ بداية التأجير <span class="required">*</span></label>
+                        <input type="text" id="startdate" name="startdate" maxlength="10" />
+                        <span class="hint">الصيغة: yyyy-mm-dd (مثال: 2026-11-20)</span>
+                        <span class="error" id="err-startdate"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="enddate">تاريخ نهاية التأجير <span class="required">*</span></label>
+                        <input type="text" id="enddate" name="enddate" maxlength="10" />
+                        <span class="hint">الصيغة: yyyy-mm-dd، ويجب أن يكون لاحقاً لتاريخ البداية</span>
+                        <span class="error" id="err-enddate"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="mobile">رقم الموبايل</label>
+                        <input type="text" id="mobile" name="mobile" maxlength="14" />
+                        <span class="hint">Syriatel (093، 098، 099) أو MTN (094، 095، 096)</span>
+                        <span class="error" id="err-mobile"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="text" id="email" name="email" />
+                        <span class="hint">مثال: name@example.com</span>
+                        <span class="error" id="err-email"></span>
+                    </div>
+
+                    <div class="btn-row">
+                        <input type="submit" value="إرسال" />
+                        <input type="reset" value="مسح الحقول" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div id="result-overlay">
+        <div id="result-box">
+            <div id="result-content"></div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="wrap">
+            <div class="cols">
+                <div class="col">
+                    <h3>الطريق لتأجير السيارات</h3>
+                    <p>سيارات متنوعة للتأجير اليومي مع حجز إلكتروني سريع.</p>
+                </div>
+                <div class="col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="AboutUs.html">من نحن</a></li>
+                        <li><a href="Cars.html">السيارات</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>تواصل معنا</h3>
+                    <ul>
+                        <li>الهاتف: 011-0000000</li>
+                        <li>البريد: info@example.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copy">F25_Assignment - Car Rental Website</p>
+    </div>
+</body>
+
+</html>
